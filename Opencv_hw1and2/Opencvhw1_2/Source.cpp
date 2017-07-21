@@ -42,8 +42,14 @@ int HW01_TestFunction()
 	moveWindow("imgGray", 350, 50);
 	moveWindow("imgBin", 650, 50);
 
-	waitKey(0);
-	destroyAllWindows();
+	while (1)
+	{
+		if (waitKey(0) == 13)
+		{
+			destroyAllWindows();
+			break;
+		}
+	}
 	return 0;
 }
 
@@ -87,8 +93,14 @@ int HW02_ReadAndShowData(int numberOfImgs)
 		moveWindow("imgGray", 350, 50);
 		moveWindow("imgBin", 650, 50);
 
-		waitKey(0);
-		destroyAllWindows();
+		while (1)
+		{
+			if (waitKey(0) == 13)
+			{
+				destroyAllWindows();
+				break;
+			}
+		}
 	}
 	return 0;
 }
